@@ -9,7 +9,7 @@ git clone https://github.com/austinkangmusic/Emma-0.1v.git
 ## cd to the folder directory
 2.
 ```bash
-cd Emma-0.1v.git
+cd Emma-0.1v
 ```
 
 ## Download the XTTS-v2 model.
