@@ -3,11 +3,11 @@ import os
 import wave
 import numpy as np
 import torch
-from initialize_whisper import initialize_whisper_model
+# from initialize_whisper import initialize_whisper_model
 from silero_vad import (load_silero_vad, read_audio, get_speech_timestamps, save_audio, VADIterator, collect_chunks)# from initialize_whisper import initialize_whisper_model
 
 # Initialize Whisper model
-whisper_model = initialize_whisper_model()
+# whisper_model = initialize_whisper_model()
 
 # Load VAD model
 model = load_silero_vad(onnx=False)
@@ -124,6 +124,6 @@ def start(whisper_model, use_recording=True):
     with open("transcription/user_audio.txt", "w") as file:
         file.write(user_input)
 
-while True:
-    start(whisper_model)
+# while True:
+    # start(whisper_model)
 
